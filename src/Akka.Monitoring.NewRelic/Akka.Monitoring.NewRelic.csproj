@@ -15,8 +15,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Akka.Monitoring" Version="0.7.0" />
     <PackageReference Include="NewRelic.Agent.Api" Version="6.18.139" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Akka.Monitoring">
+      <HintPath>..\..\lib\Akka.Monitoring\netstandard2.0\Akka.Monitoring.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
